@@ -1,0 +1,5 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^ads.selfieera.com [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.ads.selfieera.com [NC]
+RewriteRule ^(.*)$ https://ads.selfieera.com/$1 [L,R=301,NC]
